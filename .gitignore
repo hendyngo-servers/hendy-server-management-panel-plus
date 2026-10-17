@@ -1,0 +1,12 @@
+node_modules/
+.wrangler/
+.wrangler-dry-run/
+coverage/
+.env
+.env.*
+.dev.vars
+.dev.vars.*
+*.dev.vars
+npm-debug.log*
+*.log
+.DS_Store
