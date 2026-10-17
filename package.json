@@ -1,0 +1,17 @@
+{
+  "name": "hendy-server-management-panel-plus",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Cloudflare-native, Access-protected control panel for Cloudflare Workers, D1 databases, and KV namespaces.",
+  "type": "module",
+  "scripts": {
+    "check": "node --check worker/index.mjs && node --check public/app.js && node --test",
+    "test": "node --test",
+    "deploy:dry-run": "npx --yes wrangler@4.149.0 deploy --dry-run --outdir .wrangler-dry-run",
+    "dev": "npx --yes wrangler@4.149.0 dev",
+    "deploy": "npx --yes wrangler@4.149.0 deploy"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
